@@ -22,11 +22,11 @@ git -C course_tools checkout --detach af9f335301d9badb482dfafa10c4534eabac845a
 
 ## Prepare the data
 
-For the November 22 forecast, the last input hour ends at November 21, 12:00 UTC, which is 20:00 in Taiwan. Wait for that hour to be available before downloading the full interval. For the September benchmark, use the second pair of settings below instead.
+For the November 22 forecast, the archive ends at November 20, 18:00 UTC (November 21, 02:00 in Taiwan). The last included file is `2026-11-20-17.json.gz`. For the September benchmark, use the second pair of settings below instead.
 
 ```sh
 TARGET=2026-11-22
-RAW_END=2026-11-21T12:00:00Z
+RAW_END=2026-11-20T18:00:00Z
 
 # To reproduce the reference week, use these two values instead:
 # TARGET=2026-09-27
